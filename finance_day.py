@@ -134,7 +134,6 @@ def get_gradient_for_score(ticker):
 
 def get_ticker_wise_confidence():
     tickers = get_nse_symbols()
-    tickers = tickers[:3]
     data = {'ticker': [], 'buy': [], 'sell': [], 'score': [], 'gap': []}
     for i in range(len(tickers)):
         ticker = tickers[i]
